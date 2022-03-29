@@ -1,0 +1,37 @@
+html, body {
+  background-color: #20243c;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.linkBar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  min-height: 3rem;
+  border-bottom: 2px solid white;
+}
+
+.faceAndQuoteSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.ollyFacePfp {
+  width: 25%;
+  border-radius: 4px;
+  transition: .3s;
+}
+
+.ollyFacePfp:hover {
+  filter: brightness(30%);
+}
+
+.homeNameAndQuote {
+  margin-left: 10px;
+  width: 50%;
+}
