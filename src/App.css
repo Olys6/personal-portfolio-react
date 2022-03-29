@@ -35,3 +35,7 @@ html, body {
   margin-left: 10px;
   width: 50%;
 }
+
+.languageIconsHeader {
+  font-size: 40px;
+}
