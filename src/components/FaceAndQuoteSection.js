@@ -30,7 +30,7 @@ const FaceAndQuoteSection = () => {
   return(
     <section className="faceAndQuoteSection">
       <div className="divLeftOfPfp"></div>
-      <div className="ollyFacePfp"> </div>
+      <div className="ollyFacePfp"></div>
       <div className="homeNameAndQuote animate__animated animate__backInLeft">
         <Typography className="oliverNameAndIntro" color="secondary" variant="h4">Hi my name is Oliver Skjevesland and I'm a <br /> {languageIconElemsArray[i]}.</Typography>
         <br />

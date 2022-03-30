@@ -4,6 +4,7 @@ import './App.css';
 import 'animate.css';
 import FaceAndQuoteSection from './components/FaceAndQuoteSection';
 import Linkbar from './components/Linkbar';
+import ProjectsSection from './components/ProjectsSection'
 
 const theme = createTheme(themeOptions);
 
@@ -12,6 +13,9 @@ function App() {
     <ThemeProvider theme={theme}>
       <Linkbar />
       <FaceAndQuoteSection />
+      <hr style={{ width: '90%'}} />
+      <ProjectsSection />
+      <hr tyle={{ width: '90%' }} />
     </ThemeProvider>
   );
 }
