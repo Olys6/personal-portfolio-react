@@ -1,6 +1,8 @@
 html, body {
   background-color: #20243c;
   font-family: 'Titillium Web', sans-serif;
+  transition: .2s;
+  scroll-behavior: smooth;
 }
 
 .linkBar {
@@ -14,54 +16,145 @@ html, body {
   font-size: 22px;
 }
 
+.underQuotelinks {
+  display: flex;
+  justify-content: flex-start;
+  gap: 3rem
+}
+
+.underQuotelink {
+  font-size: 30px
+}
+
 .faceAndQuoteSection {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 50px 20px 20px 20px;
   box-sizing: border-box;
   transition: 2s;
 }
 
-.divLeftOfPfp {
-  width: 30%;
-  height: 18rem;
-  z-index: 1;
-  background-color: #20243c;
-  /* border: 1px solid white; */
-  margin-left: -30%
-}
-
 .ollyFacePfp {
   /* margin-left: -20%; */
-  width: 20%;
-  height: 23rem;
-  border-radius: 4px;
+  display: flex;
+  align-items: flex-start;
+  width: 18rem;
+  height: 18rem;
+  border-radius: 50%;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
   z-index: 1;
-  transition: .3s;
-  background-image: url(../public/assets/OllyPFP.jpg);
-  background-size: cover;
-  background-position: top;
-}
-
-.ollyFacePfp:hover {
-  /* filter: brightness(30%); */
+  transition: .2s;
   background-image: url(../public/assets/Avatar_ghostrobe5_320x320_transparent.png);
   background-size: cover;
-  background-position: center;
-  border-bottom: 3px solid black;
-  /* border-right: 3px solid white; */
-  width: 320px;
-  height: 320px;
-  padding: 1.5rem;
+  background-position: top;
+  border-bottom: 1px solid black;
+}
+
+/* .ollyFacePfp:hover {
+  background-image: url(../public/assets/OllyPFP.jpg);
+  background-size: center 100%;
+  background-position: top;
+} */
+
+.ollyFacePfpAndNationalities {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .homeNameAndQuote {
   margin-left: 10px;
-  width: 50%;
+  width: 60%;
 }
 
-/* ? ------- NEW SECTION ------- */
+.aboutAndSkillsLink {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.7rem;
+}
+
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+}
+
+.aboutMeDescMark {
+  background-color: #389cd4;
+  border-radius: 5px;
+  padding: 0 5px 0 5px;
+}
+
+.aboutMeSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.4rem;
+  margin-bottom: 2rem;
+  --animate-delay: 0.5s;
+}
+
+.aboutMeDescription {
+  text-align: left;
+  width: 70%;
+}
+
+.skillBoxes {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 1rem;
+  margin: 0.5rem 0 2rem 0;
+}
+
+.skillBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.skillBox1 {
+  /* border: 1px solid black; */
+  width: 49%;
+}
+
+.skillBox2 {
+  width: 49%;
+}
+
+.skillLogos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  --animate-delay: 0.3s;
+}
+
+.skillLogo {
+  display: flex;
+  flex-direction:column-reverse;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: white;
+  background-color: #20243c;
+  border: 1px solid white;
+  padding: 0 10px 2px 10px;
+  border-radius: 10px;
+  transition: .2s;
+}
+
+.skillLogo:hover {
+  transform: scale(1.3);
+  z-index: 1;
+}
+
+
+
+/* ? ------- PROJECTS SECTION ------- */
 
 .projectsSection {
   display: flex;
@@ -72,31 +165,48 @@ html, body {
 }
 
 .projectAccordion  {
-  width: 40%;
+  width: 42%;
   display: block;
   margin-top: 0 !important;
   border-radius: 5px !important;
 }
 
+/* ? ------- ABOUT ME SECTION ------- */
+
+.aboutMeUbuntuPic {
+  width: 60%;
+}
+
+.interests {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  width: 90%;
+}
+
 /* ? ------ RESPONSIVE SECTION ------ */
 
 @media screen and (min-width: 1500px) {
-  .ollyFacePfp {
-    width: 17%;
-  }
 }
 
 @media screen and (min-width: 2300px) {
-  .ollyFacePfp {
-    width: 13%;
-  }
 }
 
 @media screen and (max-width: 1080px) {
-  .ollyFacePfp {
+  /* .ollyFacePfp {
     width: 17rem;
+  } */
+  .aboutMeDescription {
+    width: 90%;
   }
-
+  .aboutMeUbuntuPic {
+    width: 90%;
+  }
+  .interests {
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -104,17 +214,39 @@ html, body {
     flex-direction: column;
     gap: 1rem;
   }
+  .underQuotelinks {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
   .projectAccordion {
     width: 90%;
   }
   .homeNameAndQuote {
-    width: 82%;
+    width: 90%;
+    margin-left: -10px;
   }
   .oliverNameAndIntro {
     text-align: center;
+    width: 103%;
+    height: 9rem;
+    margin-left: -10px;
+    /* height:"10rem" */
   }
   .projectsSection {
     flex-direction: column;
+    gap: 1rem;
+  }
+  .skillBoxes {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .skillBox1 {
+    width: 95%;
+  }
+  .skillBox2 {
+    width: 90%;
   }
 }
 
@@ -130,4 +262,3 @@ html, body {
     display: none;
   }
 }
-

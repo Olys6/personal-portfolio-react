@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Accordion, AccordionDetails, AccordionSummary, Typography, Button } from '@mui/material';
+import { Accordion, AccordionDetails, AccordionSummary, Typography, Button, Link } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 
@@ -9,14 +9,14 @@ const ProjectsSection = () => {
   const [expanded2, setExpanded2] = useState(false);
   const [expanded3, setExpanded3] = useState(false);
   const [expanded4, setExpanded4] = useState(false);
-  const [expandedBrightness1, setExpandedBrightness1] = useState("linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, -1)), url(/assets/PCEnthusiasts/Presentation.gif)");
+  const [expandedBrightness1, setExpandedBrightness1] = useState("linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(/assets/PCEnthusiasts/Presentation.gif)");
   const [expandedBrightness2, setExpandedBrightness2] = useState("linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(/assets/MuseumMapper/MuseumMapperShowcase.gif)");
   const [expandedBrightness3, setExpandedBrightness3] = useState("linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(/assets/RapidGames/RapidGamesShowcase.gif)");
   const [expandedBrightness4, setExpandedBrightness4] = useState("linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(/assets/BerserkersTrial/Filmage-2021-12-16_130308.gif)");
 
   const handleChange1 = (panel1) => (event, isExpanded1) => {
     setExpanded1(isExpanded1 ? panel1 : false);
-    (isExpanded1 ? setExpandedBrightness1("linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 2)), url(/assets/PCEnthusiasts/Presentation.gif)") 
+    (isExpanded1 ? setExpandedBrightness1("linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 2)), url(/assets/PCEnthusiasts/Presentation.gif)") 
     : 
     setExpandedBrightness1("linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(/assets/PCEnthusiasts/Presentation.gif)"));
   };
@@ -40,101 +40,101 @@ const ProjectsSection = () => {
   };
 
   return(
-    <section className="projectsSection">
+    <>
+      <section id="projectsSection">
+        <Link href="#projectsSection"><Typography textAlign="center" color="secondary" variant="h2" sx={{ marginBottom: "2rem" }}><ExpandMoreIcon sx={{ fontSize: "40px" }} />My Projects<ExpandMoreIcon sx={{ fontSize: "40px" }} /></Typography></Link>
 
-      <Accordion className="projectAccordion" sx={{ minHeight: "20rem", transition: ".3s", backgroundImage: expandedBrightness1, backgroundSize: "cover", backgroundPosition: "center", marginBottom: "1rem" }} expanded={expanded1 === 'panel1'} onChange={handleChange1('panel1')}>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon color="secondary" sx={{ fontSize: "50px", backgroundImage: "linear-gradient(to right top, #092145, #05316c, #0c4094, #234ebe, #415ce8)", borderRadius: "4px" }} />}
-          sx={{ backgroundColor: "secondary" }}
-        >
-          <Typography sx={{ fontWeight:"bold" }} color='secondary' variant="h5" >Project 4: PC Enthusiasts</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography sx={{ fontWeight: "bold", textDecoration: "underline" }} variant="h6">1 week / Solo</Typography>
-          <br />
-          <Typography sx={{ fontWeight: "bold" }} variant="h6">
-            I created a website with React as my front-end and Django as my back-end.
-            The website allows you to create different computer builds from a range of components if you are logged in.
-          </Typography>
-          <br />
-          <div style={{ display: "flex", gap: "1rem" }}>
-            <Button href="https://pc-enthusiasts.herokuapp.com" target="_blank" sx={{ fontWeight: "bold", fontSize: "20px" }} variant="contained">Visit page</Button>
-            <Button href="https://github.com/Olys6/PC-Enthusiasts/tree/main#readme" target="_blank" sx={{ fontWeight: "bold", fontSize: "20px" }} variant="contained">look at ReadMe</Button>
-          </div>
-        </AccordionDetails>
-      </Accordion>
-
-      <Accordion className="projectAccordion" sx={{ minHeight: "20rem", transition: ".3s", backgroundImage: expandedBrightness2, backgroundSize: "cover", backgroundPosition: "center", marginBottom: "1rem" }} expanded={expanded2 === 'panel2'} onChange={handleChange2('panel2')}>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon color="secondary" sx={{ fontSize: "50px", backgroundColor: "hsl(348, 100%, 61%)", borderRadius: "4px" }} />}
-          sx={{ backgroundColor: "secondary" }}
-        >
-          <Typography sx={{ fontWeight: "bold" }} color='secondary' variant="h5" >Project 3: Museum Mapper</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography sx={{ fontWeight: "bold", textDecoration: "underline", marginTop: "-15px", marginBottom: "-16px"}} variant="h6">1 week / Group of 4</Typography>
-          <br />
-          <Typography sx={{ fontWeight: "bold" }} variant="h6">
-            I made a website for finding museums in England using React and MongoDB in a group of 4.
-            My group and I pair coded the back-end and we later worked separately on the front-end.
-            This project made me learn a lot about CSS and HTML as I focused on styling.
-          </Typography>
-          <br />
-          <div style={{ display: "flex", gap: "1rem" }}>
-            <Button href="https://museum-mapper.herokuapp.com/" target="_blank" sx={{ fontWeight: "bold", fontSize: "20px" }} variant="contained">Visit page</Button>
-            <Button href="https://github.com/Olys6/SEI-Project-3#readme" target="_blank" sx={{ fontWeight: "bold", fontSize: "20px" }} variant="contained">look at ReadMe</Button>
-          </div>
-        </AccordionDetails>
-      </Accordion>
-
-      <Accordion className="projectAccordion" sx={{ minHeight: "20rem", transition: ".3s", backgroundImage: expandedBrightness3, backgroundSize: "cover", backgroundPosition: "center", marginBottom: "0 !important" }} expanded={expanded3 === 'panel3'} onChange={handleChange3('panel3')}>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon color="secondary" sx={{ fontSize: "50px", backgroundColor: "#505cc4", borderRadius: "4px" }} />}
-          sx={{ backgroundColor: "secondary" }}
-        >
-          <Typography sx={{ fontWeight: "bold" }} color='secondary' variant="h5" >Project 2: Rapid Games</Typography>
-          {/* <img style={{ width: "10rem" }} alt="pc enthusiasts project" src="/assets/PCEnthusiasts/Thumbnail.gif" /> */}
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography sx={{ fontWeight: "bold", textDecoration: "underline" }} variant="h6">48 Hours / Duo</Typography>
-          <br />
-          <Typography sx={{ fontWeight: "bold" }} variant="h6">
-            I worked with a classmate with the freetogame API and made a website using React to help the user find a free game to play.
-            In this project,
-            I learnt a lot about JS fundamentals and logic.
-          </Typography>
-          <br />
-          <div style={{ display: "flex", gap: "1rem" }}>
-            <Button href="https://rapidgames.netlify.app" target="_blank" sx={{ fontWeight: "bold", fontSize: "20px" }} variant="contained">Visit page</Button>
-            <Button href="https://github.com/Olys6/Rapid-Games#readme" target="_blank" sx={{ fontWeight: "bold", fontSize: "20px" }} variant="contained">look at ReadMe</Button>
-          </div>
-        </AccordionDetails>
-      </Accordion>
-
-      <Accordion className="projectAccordion" sx={{ minHeight: "20rem", transition: ".3s", backgroundImage: expandedBrightness4, backgroundSize: "cover", backgroundPosition: "center" }} expanded={expanded4 === 'panel4'} onChange={handleChange4('panel4')}>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon color="secondary" sx={{ fontSize: "50px", backgroundImage: "url(/assets/BerserkersTrial/CobblestroneSimple.jpeg)", borderRadius: "4px", backgroundSize: "cover" }} />}
-          id="accordionSummary"
-          sx={{ backgroundColor: "secondary" }}
-        >
-          <Typography sx={{ fontWeight: "bold" }} color='secondary' variant="h5" >Project 1: Berserkers Trial</Typography>
-          {/* <img style={{ width: "10rem" }} alt="pc enthusiasts project" src="/assets/PCEnthusiasts/Thumbnail.gif" /> */}
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography sx={{ fontWeight: "bold", textDecoration: "underline" }} variant="h6">1 week / Solo</Typography>
-          <br />
-          <Typography sx={{ fontWeight: "bold" }} variant="h6">
-            I worked on a classic grid-based game with HTML, JavaScript and CSS. I chose Pac-man,
-            learnt and got a better understanding of JavaScript and CSS from this experience.
-          </Typography>
-          <br />
-          <div style={{ display: "flex", gap: "1rem" }}>
-            <Button href="https://olys6.github.io/Berserkers-Trial/" target="_blank" sx={{ fontWeight: "bold", fontSize: "20px" }} variant="contained">Visit page</Button>
-            <Button href="https://github.com/Olys6/SEI-Project1#readme" target="_blank" sx={{ fontWeight: "bold", fontSize: "20px" }} variant="contained">look at ReadMe</Button>
-          </div>
-        </AccordionDetails>
-      </Accordion>
-    </section>
+        <div className="projectsSection">
+          <Accordion className="projectAccordion" sx={{ minHeight: "20rem", transition: ".3s", backgroundImage: expandedBrightness1, backgroundSize: "cover", backgroundPosition: "center", marginBottom: "1rem" }} expanded={expanded1 === 'panel1'} onChange={handleChange1('panel1')}>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon color="secondary" sx={{ fontSize: "50px", backgroundImage: "linear-gradient(to right top, #092145, #05316c, #0c4094, #234ebe, #415ce8)", borderRadius: "4px" }} />}
+              sx={{ backgroundColor: "secondary" }}
+            >
+              <Typography sx={{ fontWeight: "bold", backgroundImage: "linear-gradient(to right top, #092145, #05316c, #0c4094, #234ebe, #415ce8)", borderRadius: "4px", padding: "3px" }} color='secondary' variant="h5" >Project 4: PC Enthusiasts</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography sx={{ fontWeight: "bold", textDecoration: "underline" }} variant="h6">1 week / Solo</Typography>
+              <br />
+              <Typography sx={{ fontWeight: "bold" }} variant="h6">
+                I created a website with React as my front-end and Django as my back-end.
+                The website allows you to create different computer builds from a range of components if you are logged in.
+              </Typography>
+              <br />
+              <div style={{ display: "flex", gap: "1rem", marginTop: "-5px" }}>
+                <Button href="https://pc-enthusiasts.herokuapp.com" target="_blank" sx={{ fontWeight: "bold", fontSize: "20px" }} variant="contained">Visit page</Button>
+                <Button href="https://github.com/Olys6/PC-Enthusiasts/tree/main#readme" target="_blank" sx={{ fontWeight: "bold", fontSize: "20px" }} variant="contained">look at ReadMe</Button>
+              </div>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion className="projectAccordion" sx={{ minHeight: "20rem", transition: ".3s", backgroundImage: expandedBrightness2, backgroundSize: "cover", backgroundPosition: "center", marginBottom: "1rem" }} expanded={expanded2 === 'panel2'} onChange={handleChange2('panel2')}>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon color="secondary" sx={{ fontSize: "50px", backgroundColor: "hsl(348, 100%, 61%)", borderRadius: "4px" }} />}
+              sx={{ backgroundColor: "secondary" }}
+            >
+              <Typography sx={{ fontWeight: "bold", backgroundColor: "hsl(348, 100%, 61%)", borderRadius: "4px", padding: "3px" }} color='secondary' variant="h5" >Project 3: Museum Mapper</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography sx={{ fontWeight: "bold", textDecoration: "underline", marginTop: "-15px", marginBottom: "-16px"}} variant="h6">1 week / Group of 4</Typography>
+              <br />
+              <Typography sx={{ fontWeight: "bold" }} variant="h6">
+                I made a website for finding museums in England using React and MongoDB in a group of 4.
+                My group and I pair coded the back-end and we later worked separately on the front-end.
+                This project made me learn a lot about CSS and HTML as I focused on styling.
+              </Typography>
+              <br />
+              <div style={{ display: "flex", gap: "1rem", marginTop: "-6px" }}>
+                <Button href="https://museum-mapper.herokuapp.com/" target="_blank" sx={{ fontWeight: "bold", fontSize: "20px" }} variant="contained">Visit page</Button>
+                <Button href="https://github.com/Olys6/SEI-Project-3#readme" target="_blank" sx={{ fontWeight: "bold", fontSize: "20px" }} variant="contained">look at ReadMe</Button>
+              </div>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion className="projectAccordion" sx={{ minHeight: "20rem", transition: ".3s", backgroundImage: expandedBrightness3, backgroundSize: "cover", backgroundPosition: "center", marginBottom: "0 !important" }} expanded={expanded3 === 'panel3'} onChange={handleChange3('panel3')}>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon color="secondary" sx={{ fontSize: "50px", backgroundColor: "#505cc4", borderRadius: "4px" }} />}
+              sx={{ backgroundColor: "secondary" }}
+            >
+              <Typography sx={{ fontWeight: "bold", backgroundColor: "#505cc4", borderRadius: "4px", padding: "3px" }} color='secondary' variant="h5" >Project 2: Rapid Games</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography sx={{ fontWeight: "bold", textDecoration: "underline" }} variant="h6">48 Hours / Duo</Typography>
+              <br />
+              <Typography sx={{ fontWeight: "bold" }} variant="h6">
+                I worked with a classmate with the freetogame API and made a website using React to help the user find a free game to play.
+                In this project,
+                I learnt a lot about JS fundamentals and logic.
+              </Typography>
+              <br />
+              <div style={{ display: "flex", gap: "1rem", marginTop: "-5px" }}>
+                <Button href="https://rapidgames.netlify.app" target="_blank" sx={{ fontWeight: "bold", fontSize: "20px" }} variant="contained">Visit page</Button>
+                <Button href="https://github.com/Olys6/Rapid-Games#readme" target="_blank" sx={{ fontWeight: "bold", fontSize: "20px" }} variant="contained">look at ReadMe</Button>
+              </div>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion className="projectAccordion" sx={{ minHeight: "20rem", transition: ".3s", backgroundImage: expandedBrightness4, backgroundSize: "cover", backgroundPosition: "center" }} expanded={expanded4 === 'panel4'} onChange={handleChange4('panel4')}>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon color="secondary" sx={{ fontSize: "50px", backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(/assets/BerserkersTrial/CobblestroneSimple.jpeg)", borderRadius: "4px", backgroundSize: "cover" }} />}
+              id="accordionSummary"
+              sx={{ backgroundColor: "secondary" }}
+            >
+              <Typography sx={{ fontWeight: "bold", backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(/assets/BerserkersTrial/CobblestroneSimple.jpeg)", backgroundSize:"contain", backgroudPosition:"center", borderRadius: "4px", padding: "3px" }} color='secondary' variant="h5" >Project 1: Berserkers Trial</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography sx={{ fontWeight: "bold", textDecoration: "underline" }} variant="h6">1 week / Solo</Typography>
+              <br />
+              <Typography sx={{ fontWeight: "bold" }} variant="h6">
+                I worked on a classic grid-based game with HTML, JavaScript and CSS. I chose Pac-man,
+                learnt and got a better understanding of JavaScript and CSS from this experience.
+              </Typography>
+              <br />
+              <div style={{ display: "flex", gap: "1rem", marginTop: "-5px" }}>
+                <Button href="https://olys6.github.io/Berserkers-Trial/" target="_blank" sx={{ fontWeight: "bold", fontSize: "20px" }} variant="contained">play game</Button>
+                <Button href="https://github.com/Olys6/SEI-Project1#readme" target="_blank" sx={{ fontWeight: "bold", fontSize: "20px" }} variant="contained">look at ReadMe</Button>
+              </div>
+            </AccordionDetails>
+          </Accordion>
+        </div>
+      </section>
+    </>
   )
 }
 
