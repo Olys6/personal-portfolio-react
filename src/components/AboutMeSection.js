@@ -10,6 +10,18 @@ const AboutMeSection = () => {
     <section id="aboutMeSection" className="aboutMeSection animate__animated animate__fadeIn">
       <Link href="#aboutMeSection"><Typography color="secondary" variant="h2" className="AboutMePageTitle"><ExpandMoreIcon sx={{ fontSize: "40px" }} />About Me<ExpandMoreIcon sx={{ fontSize: "40px" }} /></Typography></Link>
 
+      <Typography variant="h5" color="secondary" className="aboutMeDescription">
+        I am a self-taught web developer and specially appreciate front-end development. After 2 years of learning on my own, I decided to join an immersive course to take these skills to the next level.
+      </Typography>
+      <Typography variant="h5" color="secondary" className="aboutMeDescription">
+        What sparks my interest and motivates me the most is to bring my ideas to life while solving a problem and learning from it.
+      </Typography>
+      <Typography variant="h5" color="secondary" className="aboutMeDescription">
+        I work best in a collaborative environment,
+        sharing and learning from others while exchanging new ideas.
+        I'm looking to become a junior software engineer within a well-coordinated team.
+      </Typography>
+
       <Typography variant="h5" color="secondary" className="aboutMeDescription">I love making apps/websites and have a passion for styling and making tools.</Typography>
       <Typography color="secondary" variant="h5" className="aboutMeDescription">
         I'm looking to work as a junior software engineer to make software that people will use in day to day life.
@@ -28,9 +40,6 @@ const AboutMeSection = () => {
         Trying new things when it comes to code and technology, in general, is a hobby.
       </Typography>
       <img alt="ubuntu os" className="aboutMeUbuntuPic" style={{ borderRadius: "5px", border:"1px solid white" }} src="assets/Screenshot from 2022-01-05 15-14-55.png" />
-      <Typography color="secondary" variant="h5" className="aboutMeDescription">
-        I am familiar with computer hardware as I even built my computer!
-      </Typography>
       <Typography color="secondary" variant="h2">Interests</Typography>
       <div className="interests">
         <div className="computerInterest">
@@ -38,13 +47,15 @@ const AboutMeSection = () => {
           <Typography color="secondary" variant="h5">
             I'm really into computer hardware as well as games and I built my own gaming PC.
             I love finding new software and hardware to modify my experience using devices.
+            <br />
+            I am familiar with computer hardware as I even built my computer!
           </Typography>
         </div>
         <div className="skiingInterest">
           <Typography color="secondary" variant="h3">Skiing <i class="fa-solid fa-person-skiing"></i></Typography>
           <Typography color="secondary" variant="h5">
             I enjoy skiing.
-            I usually go up to Villars to ski with my family but I've also gone on a few ski field trips with friends and classmates.
+            I usually go up to Switzerland to ski with my family but I've also gone on a few ski field trips with friends and classmates.
             I've been skiing since I was about 3 years old.
           </Typography>
         </div>
