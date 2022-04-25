@@ -28,6 +28,11 @@ const FaceAndQuoteSection = () => {
     }, 1000)
   }, [i, languageIconElemsArray.length])
 
+  const copy = async () => {
+    await navigator.clipboard.writeText('OliverS#5586');
+    alert('Username copied! Go to discord and paste the username in the add friends tab.');
+  }
+
   return (
     <>
       <section id="faceAndQuoteSection" className="faceAndQuoteSection">
@@ -37,7 +42,7 @@ const FaceAndQuoteSection = () => {
         </div>
         <div className="homeNameAndQuote animate__animated animate__backInRight">
 
-          <Typography className="oliverNameAndIntro" color="secondary" variant="h4">Hi my name is <span style={{ fontWeight: "bold" }}>Oliver S.</span> and I'm a {languageIconElemsArray[i]}.</Typography>
+          <Typography className="oliverNameAndIntro" color="secondary" variant="h4">Hi my name is <span style={{ fontWeight: "bold" }}>Oliver S.</span> and I'm a <br className="brTagBeforeLanguage" /> {languageIconElemsArray[i]}.</Typography>
           <br />
 
           <Typography color="secondary" variant="h5" sx={{ fontStyle: "italic" }}>"My goal is to improve and learn new skills with IT-based work experience allowing me to develop programs that will be helpful in everyday life."</Typography>
@@ -46,11 +51,11 @@ const FaceAndQuoteSection = () => {
             <Link className="underQuotelink" href="https://github.com/Olys6" target="_blank" rel="noreferrer" color="secondary" underline="hover" ><strong><i className="fa-brands fa-github"></i> Olys6</strong></Link>
             <Link className="underQuotelink" href="mailto:enquiries@olys.tech" color="secondary" underline="hover" ><strong><i className="fa-solid fa-envelope"></i> enquiries@olys.tech</strong></Link>
             <Link className="underQuotelink" href="https://www.linkedin.com/in/oliver-skjevesland/" target="_blank" rel="noreferrer" color="secondary" underline="hover" ><strong><i className="fa-brands fa-linkedin"></i> oliver-skjevesland</strong></Link>
-
+            <Link className="underQuotelink" onClick={copy} color="secondary" underline="hover" ><strong><i class="fa-brands fa-discord"></i> OliverS#5586</strong></Link>
           </div>
         </div>
       </section>
-      <hr style={{ width: '90%', marginTop: "1rem", marginBottom: "2rem" }} />
+      <hr style={{ width: '90%', marginTop: "1rem", marginBottom: "1rem" }} />
 
       <div class="aboutMe">
         <Box id="languageSkills" className="animate__animated animate__fadeInLeft animate__delay-1s" >
@@ -69,6 +74,24 @@ const FaceAndQuoteSection = () => {
               <Typography variant="h4" color="secondary" sx={{ marginRight: "-55px", zIndex: "1" }}>🇩🇪</Typography>
               <LinearProgress id="englishSkillBar" sx={{ backgroundColor: "white", color: "orange" }} className="" variant="determinate" color="inherit" value={30} />
             </Box>
+          </Box>
+        </Box>
+
+        <Typography variant="h4" sx={{ marginTop: "20px" }} color="secondary">Preferred Operating Systems:</Typography>
+
+        <Box sx={{ display: 'flex', gap:"1rem", width: '100%', justifyContent: "space-evenly", marginTop: "10px", alignItems: "flex-end", flexWrap: "wrap" }}>
+          <Box sx={{ display: 'flex', flexDirection: "column", justifyContent: "center", alignItems: "center", gap: "1rem" }}>
+            <img style={{ width: "8rem" }} src="./assets/osLogo/Apple_logo_grey.svg" alt="Apple logo" />
+            <Typography variant="h4" color="secondary">MacOS/UNIX</Typography>
+          </Box>
+
+          <Box sx={{ display: 'flex', flexDirection: "column", justifyContent: "center", alignItems: "center", gap: "1rem" }}>
+            <img style={{ width: "8rem" }} src="./assets/osLogo/ubuntu-seeklogo.com.svg" alt="Ubuntu logo" />
+            <Typography variant="h4" color="secondary">Linux/Ubuntu</Typography>
+          </Box>
+          <Box sx={{ display: 'flex', flexDirection: "column", justifyContent: "center", alignItems: "center", gap: "1rem" }}>
+            <img style={{ width: "8rem" }} src="./assets/osLogo/Windows_logo_-_2012_(dark_blue,_lines_thinner).svg" alt="Windows logo" />
+            <Typography variant="h4" color="secondary">Windows 10</Typography>
           </Box>
         </Box>
 

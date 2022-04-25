@@ -20,7 +20,8 @@ body {
 .underQuotelinks {
   display: flex;
   justify-content: flex-start;
-  gap: 3rem
+  flex-wrap: wrap;
+  gap: 1.2rem
 }
 
 .underQuotelink {
@@ -31,7 +32,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px 20px 20px 20px;
+  padding: 10px 20px 0px 20px;
   box-sizing: border-box;
   transition: 2s;
 }
@@ -71,10 +72,15 @@ body {
   width: 85%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-direction: column;
+  flex-wrap: wrap;
   gap: 1rem;
 }
+
+  .brTagBeforeLanguage {
+    display: none;
+  }
 
 #englishSkillBar {
   height: 2.5rem;
@@ -218,6 +224,11 @@ body {
   /* .ollyFacePfp {
     width: 17rem;
   } */
+  
+  .brTagBeforeLanguage {
+    display: block;
+  }
+
   .aboutMeDescription {
     width: 90%;
   }
