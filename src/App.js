@@ -1,13 +1,15 @@
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { themeOptions } from './Theme';
 import './App.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import 'animate.css';
 import { Link } from '@mui/material'
 import FaceAndQuoteSection from './components/FaceAndQuoteSection';
 // import Linkbar from './components/Linkbar';
 import ProjectsSection from './components/ProjectsSection'
 import AboutMeSection from './components/AboutMeSection'
-
+AOS.init();
 const theme = createTheme(themeOptions);
 
 function App() {

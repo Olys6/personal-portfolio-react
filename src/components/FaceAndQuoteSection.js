@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Typography, Link, LinearProgress, Box } from '@mui/material'
+import { Typography, Link } from '@mui/material'
 import MySkills from "./MySkills";
 import LanguagesSpoken from "./LanguagesSpoken"
 

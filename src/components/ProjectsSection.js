@@ -13,7 +13,7 @@ const ProjectsSection = () => {
     <section id="projectsSection">
       <Link href="#projectsSection"><Typography textAlign="center" color="secondary" variant="h2" sx={{ marginBottom: "2rem" }}><ExpandMoreIcon sx={{ fontSize: "40px" }} />My Projects<ExpandMoreIcon sx={{ fontSize: "40px" }} /></Typography></Link>
 
-      <div className="projectsSection">
+      <div className="projectsSection" data-aos="fade-up">
 
         <PCEnthusiastsAccordion />
 

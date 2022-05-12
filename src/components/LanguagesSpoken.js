@@ -8,7 +8,7 @@ const LanguagesSpoken = () => {
 
   return(
     <>
-      <Box id="languageSkills" className="animate__animated animate__fadeInLeft animate__delay-1s" >
+      <Box id="languageSkills" className="" >
         <Typography variant="h4" color="secondary">Languages Spoken:</Typography>
 
         <Box sx={{ display: 'flex', gap: "1rem", width: '100%', justifyContent: "center" }}>

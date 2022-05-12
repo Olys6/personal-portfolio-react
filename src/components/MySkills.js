@@ -43,7 +43,7 @@ const MySkills = () => {
   return(
     <section id="skillsSection" className="skillsSection animate__animated animate__fadeIn">
       <Link href="#skillsSection"><Typography variant="h2" textAlign="center" color="secondary"><ExpandMoreIcon sx={{ fontSize: "40px" }} />My Skills<ExpandMoreIcon sx={{ fontSize: "40px" }} /></Typography></Link>
-      <div className="skillBoxes">
+      <div className="skillBoxes" data-aos="fade-up">
         <div className="skillBox skillBox1">
           <Typography variant="h3" textAlign="center" color="secondary">Frontend</Typography>
           <ul className="skillLogos">
