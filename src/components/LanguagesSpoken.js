@@ -27,7 +27,7 @@ const LanguagesSpoken = () => {
         </Box>
       </Box>
 
-      <Typography variant="h4" sx={{ marginTop: "20px" }} color="secondary">Preferred Operating Systems:</Typography>
+      {/* <Typography variant="h4" sx={{ marginTop: "20px" }} color="secondary">Preferred Operating Systems:</Typography>
 
       <Box sx={{ display: 'flex', gap: "1rem", width: '100%', justifyContent: "space-evenly", marginTop: "10px", alignItems: "flex-end", flexWrap: "wrap" }}>
         <Box sx={{ display: 'flex', flexDirection: "column", justifyContent: "center", alignItems: "center", gap: "1rem" }}>
@@ -43,7 +43,7 @@ const LanguagesSpoken = () => {
           <img style={{ width: "8rem" }} src="./assets/osLogo/Windows_logo_-_2012_(dark_blue,_lines_thinner).svg" alt="Windows logo" />
           <Typography variant="h4" color="secondary">Windows 10</Typography>
         </Box>
-      </Box>
+      </Box> */}
     </>
   )
 }
