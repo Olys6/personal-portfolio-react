@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Typography, Link, Stack, TextField, Autocomplete } from '@mui/material'
+import { Typography, Link, Stack, TextField, Autocomplete, InputLabel, Select, MenuItem, FormControl } from '@mui/material'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const skills = [
@@ -108,7 +108,11 @@ const skills = [
 const MySkills = () => {
   const [filteredSkills, setFilteredSkills] = useState(Object.entries(skills))
   const [search, setSearch] = useState("")
+  const [age, setAge] = React.useState('');
 
+  const handleChange = (event) => {
+    setAge(event.target.value);
+  };
 
 
   // const skillLogosFE = {
@@ -194,6 +198,20 @@ const MySkills = () => {
             />
           )}
         /> */}
+        <FormControl>
+          <InputLabel id="demo-simple-select-label">Age</InputLabel>
+          <Select
+            labelId="demo-simple-select-label"
+            id="demo-simple-select"
+            value={'febd'}
+            label="Age"
+            onChange={handleChange}
+          >
+            <MenuItem value={10}>Frontend and Backend</MenuItem>
+            <MenuItem value={20}>Frontend</MenuItem>
+            <MenuItem value={30}>Backend</MenuItem>
+          </Select>
+        </FormControl>
       </Stack>
       <ul className="skillLogos">
         {filteredSkills.map((skill, i) => (
