@@ -52,13 +52,13 @@ const FaceAndQuoteSection = () => {
             <Link className="underQuotelink" href="https://github.com/Olys6" target="_blank" rel="noreferrer" color="secondary" underline="hover" ><strong><i className="fa-brands fa-github"></i> Olys6</strong></Link>
             <Link className="underQuotelink" href="mailto:enquiries@olys.tech" color="secondary" underline="hover" ><strong><i className="fa-solid fa-envelope"></i> enquiries@olys.tech</strong></Link>
             <Link className="underQuotelink" href="https://www.linkedin.com/in/oliver-skjevesland/" target="_blank" rel="noreferrer" color="secondary" underline="hover" ><strong><i className="fa-brands fa-linkedin"></i> oliver-skjevesland</strong></Link>
-            <Link className="underQuotelink" href="#" onClick={copy} color="secondary" underline="hover" ><strong><i class="fa-brands fa-discord"></i> OliverS#5586</strong></Link>
+            <Link className="underQuotelink" href="#" onClick={copy} color="secondary" underline="hover" ><strong><i className="fa-brands fa-discord"></i> OliverS#5586</strong></Link>
           </div>
         </div>
       </section>
       <hr style={{ width: '90%', marginTop: "1rem", marginBottom: "1rem" }} />
 
-      <div class="aboutMe">
+      <div className="aboutMe">
         <LanguagesSpoken />
       </div>
       <hr style={{ width: '90%', marginTop: "2rem", marginBottom: "0.3rem" }} />

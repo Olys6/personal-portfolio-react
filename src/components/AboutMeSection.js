@@ -43,7 +43,7 @@ const AboutMeSection = () => {
       <Typography color="secondary" variant="h2">Interests</Typography>
       <div className="interests">
         <div className="computerInterest" data-aos="fade-right">
-          <Typography color="secondary" variant="h3" >Computers <i class="fa-solid fa-computer"></i></Typography>
+          <Typography color="secondary" variant="h3" >Computers <i className="fa-solid fa-computer"></i></Typography>
           <Typography color="secondary" variant="h5">
             I'm really into computer hardware as well as games and I built my own gaming PC.
             I love finding new software and hardware to modify my experience using devices.
@@ -52,7 +52,7 @@ const AboutMeSection = () => {
           </Typography>
         </div>
         <div className="skiingInterest" data-aos="fade-left">
-          <Typography color="secondary" variant="h3" >Skiing <i class="fa-solid fa-person-skiing"></i></Typography>
+          <Typography color="secondary" variant="h3" >Skiing <i className="fa-solid fa-person-skiing"></i></Typography>
           <Typography color="secondary" variant="h5">
             I enjoy skiing.
             I usually go up to Switzerland to ski with my family but I've also gone on a few ski field trips with friends and classmates.

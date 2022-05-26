@@ -9,7 +9,7 @@ const skills = [
     type: "febd"
   },
   {
-    name: "TypeScipt",
+    name: "TypeScript",
     logo: <img alt="TypeScript Logo" style={{ width: "60px", borderRadius: "6px", marginBottom: "-2px" }} src="/assets/LanguageLogos/typescript-seeklogo.com.svg" />,
     type: "fe"
   },
@@ -149,20 +149,18 @@ const MySkills = () => {
       || event.target.value.includes("*") || event.target.value.includes("[") || event.target.value.includes("+")) return;
 
     setSearch(event.target.value)
+    
   }
 
   useEffect(() => {
 
     const regexSearch = new RegExp(search, 'ig')
-
     setFilteredSkills(skills.filter(skill => {
       // if (regexSearch.test(skill[0])){
       //   return skill
       // }
       return regexSearch.test(skill.name)
-
     }))
-
   }, [search])
 
 
@@ -173,12 +171,12 @@ const MySkills = () => {
       <Stack spacing={2} sx={{ width: 300 }} onClick={handleSearch}>
         <Autocomplete
           sx={{ fontWeight: "700", fontSize: "40px" }}
-          onChange={handleSearch}
-          // onClick={handleSearch}
+          // onKeyDown={handleSearch}
+
           disableClearable
           freeSolo
           options={skills.map((option) => option.name)}
-          renderInput={(params) => <TextField onChange={handleSearch} color='secondary' variant="filled" focused {...params} label="Search" sx={{ fontWeight: "700", fontSize: "30px" }} />}
+          renderInput={(params) => <TextField onChange={handleSearch} onMouseOver={handleSearch} color='secondary' variant="filled" focused {...params} label="Search" sx={{ fontWeight: "700", fontSize: "30px" }} />}
         />
         {/* <Autocomplete
           freeSolo
@@ -197,9 +195,9 @@ const MySkills = () => {
           )}
         /> */}
       </Stack>
-      <ul className="skillLogos" onMouseEnter={handleSearch}>
-        {filteredSkills.map((skill) => (
-        <li className="skillLogo" key={skill.name}>
+      <ul className="skillLogos">
+        {filteredSkills.map((skill, i) => (
+        <li className="skillLogo" key={i}>
           {skill.name} <span style={{ fontSize: "60px" }}>{skill.logo}</span>
         </li>
       ))}
