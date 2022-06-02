@@ -29,21 +29,18 @@ const AboutMeSection = () => {
         I learnt JavaScript, Python/Django, React Hooks, Node/Express, MongoDB, GitHub, HTML, CSS, PostgreSQL, Insomnia, Tableplus, MacOS.
       </Typography>
       <Typography color="secondary" variant="h5" className="aboutMeDescription" data-aos="fade-up">
-        I am extremely thrilled about finding different ways to code and making coding life simpler.
-        I will usually look for tools online in my free time to see what I can do to improve my experience.
+        I am incredibly thrilled about finding different ways to code and making coding life simpler. I will usually look for tools online in my free time to see what I can do to improve my experience.
       </Typography>
       <Typography color="secondary" variant="h5" className="aboutMeDescription" data-aos="fade-up">
-        As of writing this, I am learning how to use Ubuntu 21.0 on a dual boot drive, windows being the second boot option.
-        Trying new things when it comes to code and technology, in general, is a hobby.
+        As of writing this, I am learning C# and Unity, making my first horror game. Trying new things when it comes to code and technology, in general, is a hobby.
       </Typography>
-      <img alt="ubuntu os" className="aboutMeUbuntuPic" style={{ borderRadius: "5px", border: "1px solid white" }} src="assets/Screenshot from 2022-01-05 15-14-55.png" data-aos="zoom-in" />
+      {/* <img alt="ubuntu os" className="aboutMeUbuntuPic" style={{ borderRadius: "5px", border: "1px solid white" }} src="assets/Screenshot from 2022-01-05 15-14-55.png" data-aos="zoom-in" /> */}
       <Typography color="secondary" variant="h2">Interests</Typography>
       <div className="interests">
         <div className="computerInterest" data-aos="fade-right">
           <Typography color="secondary" variant="h3" >Computers <i className="fa-solid fa-computer"></i></Typography>
           <Typography color="secondary" variant="h5">
-            I'm really into computer hardware as well as games and I built my own gaming PC.
-            I love finding new software and hardware to modify my experience using devices.
+            I'm really into computer hardware and games, and I built my gaming PC. I love finding new software and hardware to modify my experience using devices. 
             <br />
             I am familiar with computer hardware as I even built my computer!
           </Typography>
@@ -51,9 +48,7 @@ const AboutMeSection = () => {
         <div className="skiingInterest" data-aos="fade-left">
           <Typography color="secondary" variant="h3" >Skiing <i className="fa-solid fa-person-skiing"></i></Typography>
           <Typography color="secondary" variant="h5">
-            I enjoy skiing.
-            I usually go up to Switzerland to ski with my family but I've also gone on a few ski field trips with friends and classmates.
-            I've been skiing since I was about 3 years old.
+            I enjoy skiing. I usually go up to Switzerland to ski with my family, but I've also gone on a few ski field trips with friends and classmates. I've been skiing since I was about three years old.
           </Typography>
         </div>
       </div>
