@@ -11,7 +11,7 @@ const AboutMeSection = () => {
       <Link href="#aboutMeSection"><Typography color="secondary" variant="h2" className="AboutMePageTitle"><ExpandMoreIcon sx={{ fontSize: "40px" }} />About Me<ExpandMoreIcon sx={{ fontSize: "40px" }} /></Typography></Link>
 
       <Typography variant="h5" color="secondary" className="aboutMeDescription" data-aos="fade-up">
-        I am a self-taught web developer and specially appreciate front-end development. After 2 years of learning on my own, I decided to join an immersive course to take these skills to the next level.
+        I am a self-taught web developer and especially appreciate front-end development. After two years of learning on my own, I decided to join an immersive course to take these skills to the next level.
       </Typography>
       <Typography variant="h5" color="secondary" className="aboutMeDescription" data-aos="fade-up">
         What sparks my interest and motivates me the most is to bring my ideas to life while solving a problem and learning from it.

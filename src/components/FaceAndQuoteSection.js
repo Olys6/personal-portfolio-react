@@ -43,10 +43,10 @@ const FaceAndQuoteSection = () => {
         </div>
         <div className="homeNameAndQuote animate__animated animate__backInRight">
 
-          <Typography className="oliverNameAndIntro" color="secondary" variant="h4">Hi my name is <span style={{ fontWeight: "bold" }}>Oliver S.</span> and I'm a <br className="brTagBeforeLanguage" /> {languageIconElemsArray[i]}.</Typography>
+          <Typography className="oliverNameAndIntro" color="secondary" variant="h4">Hi my name is <span style={{ fontWeight: "bold" }}>Oliver</span> and I'm a <br className="brTagBeforeLanguage" /> {languageIconElemsArray[i]}.</Typography>
           <br />
 
-          <Typography color="secondary" variant="h5" sx={{ fontStyle: "italic" }}>"My goal is to improve and learn new skills with IT-based work experience allowing me to develop programs that will be helpful in everyday life."</Typography>
+          <Typography color="secondary" variant="h5" sx={{ fontStyle: "italic" }}>"My goal is to improve and learn new skills with IT-based work experience, allowing me to develop programs that will be helpful in everyday life."</Typography>
           <br />
           <div className="underQuotelinks">
             <Link className="underQuotelink" href="https://github.com/Olys6" target="_blank" rel="noreferrer" color="secondary" underline="hover" ><strong><i className="fa-brands fa-github"></i> Olys6</strong></Link>
