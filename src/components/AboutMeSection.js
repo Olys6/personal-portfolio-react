@@ -34,6 +34,7 @@ const AboutMeSection = () => {
       <Typography color="secondary" variant="h5" className="aboutMeDescription" data-aos="fade-up">
         As of writing this, I am learning C# and Unity, making my first horror game. Trying new things when it comes to code and technology, in general, is a hobby.
       </Typography>
+      <img alt="ubuntu os" className="aboutMeUbuntuPic" style={{ borderRadius: "6px", border: "1px solid white" }} src="/assets/Screenshot 2022-06-02 at 16.53.50.png" data-aos="zoom-in" />
       {/* <img alt="ubuntu os" className="aboutMeUbuntuPic" style={{ borderRadius: "5px", border: "1px solid white" }} src="assets/Screenshot from 2022-01-05 15-14-55.png" data-aos="zoom-in" /> */}
       <Typography color="secondary" variant="h2">Interests</Typography>
       <div className="interests">
