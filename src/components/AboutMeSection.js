@@ -17,15 +17,12 @@ const AboutMeSection = () => {
         What sparks my interest and motivates me the most is to bring my ideas to life while solving a problem and learning from it.
       </Typography>
       <Typography variant="h5" color="secondary" className="aboutMeDescription" data-aos="fade-up">
-        I work best in a collaborative environment,
-        sharing and learning from others while exchanging new ideas.
-        I'm looking to become a junior software engineer within a well-coordinated team.
+        I work best in a collaborative environment, sharing and learning from others while exchanging new ideas. So I'm looking to become a junior software engineer within a well-coordinated team.
       </Typography>
 
       <Typography variant="h5" color="secondary" className="aboutMeDescription" data-aos="fade-up">I love making apps/websites and have a passion for styling and making tools.</Typography>
       <Typography color="secondary" variant="h5" className="aboutMeDescription" data-aos="fade-up">
-        I'm looking to work as a junior software engineer to make software that people will use in day to day life.
-        I am self-driven to get things done and love having a teammate work on a project with me!
+        I'm looking to work as a junior software engineer to make software that people will use daily. I am self-driven to get things done and love having a teammate work on a project with me!
       </Typography>
       <Typography color="secondary" variant="h5" className="aboutMeDescription" data-aos="fade-up">
         I recently finished a 3-month immersive course from General Assembly that taught me software engineering.
