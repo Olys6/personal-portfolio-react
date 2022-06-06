@@ -225,6 +225,14 @@ body {
   width: 90%;
 }
 
+.computerInterest {
+  width: 50%;
+}
+
+.skiingInterest {
+  width: 50%;
+}
+
 /* ? ------ RESPONSIVE SECTION ------ */
 
 @media screen and (min-width: 1500px) {}
