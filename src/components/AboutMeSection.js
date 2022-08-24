@@ -32,9 +32,9 @@ const AboutMeSection = () => {
         I am incredibly thrilled about finding different ways to code and making coding life simpler. I will usually look for tools online in my free time to see what I can do to improve my experience.
       </Typography>
       <Typography color="secondary" variant="h5" className="aboutMeDescription" data-aos="fade-up">
-        As of writing this, I am learning C# and Unity, making my first horror game. Trying new things when it comes to code and technology, in general, is a hobby.
+        As of writing this, I'm learning Java! Trying new things when it comes to code and technology, in general, is a hobby.
       </Typography>
-      <img alt="ubuntu os" className="aboutMeUbuntuPic" style={{ borderRadius: "6px", border: "1px solid white" }} src="/assets/Screenshot 2022-06-02 at 16.53.50.png" data-aos="zoom-in" />
+      <img alt="Me learning Java" className="aboutMeUbuntuPic" style={{ borderRadius: "6px", border: "1px solid white" }} src="/assets/Screenshot 2022-08-24 at 13.44.01.png" data-aos="zoom-in" />
       {/* <img alt="ubuntu os" className="aboutMeUbuntuPic" style={{ borderRadius: "5px", border: "1px solid white" }} src="assets/Screenshot from 2022-01-05 15-14-55.png" data-aos="zoom-in" /> */}
       <Typography color="secondary" variant="h2">Interests</Typography>
       <div className="interests">

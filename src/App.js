@@ -16,16 +16,29 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       {/* <Linkbar /> */}
-      <FaceAndQuoteSection />
-      <hr style={{ width: '95%', marginBottom: "0rem"}} />
-      
-      <ProjectsSection />
-      <hr style={{ width: '95%', marginTop: '2rem' }} />
-      <AboutMeSection />
-      <hr style={{ width: '95%', marginTop: '0' }} />
-      <div style={{ display: 'flex', justifyContent: 'center' }}>
-        <Link sx={{ fontSize: "30px" }} color="secondary" href="#faceAndQuoteSection">Go back to top</Link>
-      </div>
+      {/* <div style={{ display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center" }}> */}
+        <FaceAndQuoteSection />
+
+        <div style={{ display: "flex", justifyContent: "center" }}>
+          <hr style={{ width: '95%', marginBottom: "0rem"}} />
+        </div>
+
+        <ProjectsSection />
+
+        <div style={{ display: "flex", justifyContent: "center" }}>
+          <hr style={{ width: '95%', marginTop: '2rem' }} />
+        </div>
+
+        <AboutMeSection />
+
+        <div style={{ display: "flex", justifyContent: "center" }}>
+          <hr style={{ width: '95%', marginTop: '0' }} />
+        </div>
+
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <Link sx={{ fontSize: "30px" }} color="secondary" href="#faceAndQuoteSection">Go back to top</Link>
+        </div>
+      {/* </div> */}
     </ThemeProvider>
   );
 }

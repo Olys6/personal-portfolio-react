@@ -6,6 +6,13 @@ body {
   scroll-behavior: smooth;
 }
 
+/* hr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+} */
+
 .linkBar {
   display: flex;
   justify-content: space-around;
@@ -75,6 +82,7 @@ body {
   justify-content: space-evenly;
   flex-direction: column;
   flex-wrap: wrap;
+  margin-left: -50px;
   gap: 1rem;
 }
 
@@ -225,14 +233,6 @@ body {
   width: 90%;
 }
 
-.computerInterest {
-  width: 50%;
-}
-
-.skiingInterest {
-  width: 50%;
-}
-
 /* ? ------ RESPONSIVE SECTION ------ */
 
 @media screen and (min-width: 1500px) {}
@@ -316,7 +316,7 @@ body {
 
 @media screen and (max-width: 800px) {
   .homeNameAndQuote {
-    width: 105%;
+    width: 100%;
   }
 
   .faceAndQuoteSection {
@@ -326,5 +326,9 @@ body {
 
   .divLeftOfPfp {
     display: none;
+  }
+
+  #languageSkills {
+    margin-left: 0;
   }
 }

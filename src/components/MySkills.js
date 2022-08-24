@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Typography, Link, Stack, TextField, Autocomplete, InputLabel, Select, MenuItem, FormControl } from '@mui/material'
+import React from 'react';
+import { Typography, Link } from '@mui/material'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 // const skills = [
@@ -138,6 +138,7 @@ const MySkills = () => {
   }
 
   const skillLogosBack = {
+    "JavaScript": <i style={{ fontSize: "70px", color: "#ffdc04" }} className="fa-brands fa-js-square"></i>,
     "MongoDB": <img alt="Mongo DB Logo" style={{ width: "70px", marginBottom: "-12px" }} src="/assets/LanguageLogos/mongodb-svgrepo-com.svg" />,
     "Django": <img alt="Django logo" style={{ width: "55px", marginBottom: "-15px" }} src="/assets/LanguageLogos/django-seeklogo.com.svg" />,
     "PostgreSQL": <img alt="Postres Logo" style={{ width: "70px", marginBottom: "-12px" }} src="/assets/LanguageLogos/postgresql-svgrepo-com.svg" />,

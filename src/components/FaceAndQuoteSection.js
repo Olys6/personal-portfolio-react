@@ -56,13 +56,16 @@ const FaceAndQuoteSection = () => {
           </div>
         </div>
       </section>
-      <hr style={{ width: '90%', marginTop: "1rem", marginBottom: "1rem" }} />
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <hr style={{ width: '95%', marginTop: "1rem", marginBottom: "1rem" }} />
+      </div>
 
       <div className="aboutMe">
         <LanguagesSpoken />
       </div>
-      <hr style={{ width: '90%', marginTop: "2rem", marginBottom: "0.3rem" }} />
-
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <hr style={{ width: '95%', marginTop: "2rem", marginBottom: "0.3rem" }} />
+      </div>
       <MySkills />
 
     </>

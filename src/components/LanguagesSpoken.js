@@ -11,16 +11,16 @@ const LanguagesSpoken = () => {
       <Box id="languageSkills" className="" >
         <Typography variant="h4" color="secondary">Languages Spoken:</Typography>
 
-        <Box sx={{ display: 'flex', gap: "1rem", width: '100%', justifyContent: "center" }}>
-          <Box sx={{ width: "33%", display: "flex", gap: "0.2rem", alignItems: "center" }}>
+        <Box sx={{ display: 'flex', gap: "1rem", width: '90vw', justifyContent: "flex-end", alignItems: "center" }}>
+          <Box sx={{ width: "100%", display: "flex", gap: "0.2rem", alignItems: "center" }}>
             <Typography variant="h4" color="secondary" sx={{ marginRight: "-55px", zIndex: "1" }}>🇬🇧</Typography>
             <LinearProgress id="englishSkillBar" sx={{ backgroundColor: "white", color: "red" }} variant="determinate" color="inherit" value={95} />
           </Box>
-          <Box sx={{ width: "33%", display: "flex", gap: "0.2rem", alignItems: "center" }}>
+          <Box sx={{ width: "100%", display: "flex", gap: "0.2rem", alignItems: "center" }}>
             <Typography variant="h4" color="secondary" sx={{ marginRight: "-55px", zIndex: "1" }}>🇫🇷</Typography>
             <LinearProgress id="englishSkillBar" sx={{ backgroundColor: "white", color: "blue" }} className="" variant="determinate" color="inherit" value={70} />
           </Box>
-          <Box sx={{ width: "33%", display: "flex", gap: "0.2rem", alignItems: "center" }}>
+          <Box sx={{ width: "100%", display: "flex", gap: "0.2rem", alignItems: "center" }}>
             <Typography variant="h4" color="secondary" sx={{ marginRight: "-55px", zIndex: "1" }}>🇩🇪</Typography>
             <LinearProgress id="englishSkillBar" sx={{ backgroundColor: "white", color: "orange" }} className="" variant="determinate" color="inherit" value={30} />
           </Box>
