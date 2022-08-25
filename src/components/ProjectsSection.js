@@ -6,6 +6,7 @@ import MuseumMapperAccordion from './project-accordions/MuseumMapper';
 import RapidGamesAccordion from './project-accordions/RapidGames'
 import BerserkersTrialAccordion from './project-accordions/BerserkersTrial'
 import GaetteAccordion from './project-accordions/Gaette'
+import ShorelineVikingAccordion from './project-accordions/ShorelineVikingAccordion';
 
 const ProjectsSection = () => {
 
@@ -24,6 +25,8 @@ const ProjectsSection = () => {
         <BerserkersTrialAccordion />
 
         <GaetteAccordion />
+
+        <ShorelineVikingAccordion />
 
       </div>
     </section>
