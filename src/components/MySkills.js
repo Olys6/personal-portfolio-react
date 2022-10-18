@@ -119,6 +119,7 @@ const MySkills = () => {
     "JavaScript": <i style={{ fontSize: "70px", color: "#ffdc04" }} className="fa-brands fa-js-square"></i>,
     "TypeScipt": <img alt="TypeScript Logo" style={{ width: "60px", borderRadius: "6px", marginBottom: "-2px" }} src="/assets/LanguageLogos/typescript-seeklogo.com.svg" />,
     "React": <i style={{ color: "#68dcfc" }} className="fa-brands fa-react"></i>,
+    "Cypress": <img src="/assets/LanguageLogos/cypressLogo.png" alt="Cypress testing logo" style={{ width: "70px", marginBottom: "-15px" }} />,
     "VSCode": <img style={{ width: "65px", marginBottom: "-8px" }} alt="VSCode logo" src="/assets/LanguageLogos/visual-studio-code-seeklogo.com.svg"></img>,
     "Python": <img style={{ width: "54px" }} alt="python logo" src="/assets/LanguageLogos/python-seeklogo.com.svg"></img>,
     "Discord.py": <img style={{ width: "70px", marginBottom: "0px" }} alt="Discord.py logo" src="/assets/LanguageLogos/Discord-Logo-White.svg"></img>,

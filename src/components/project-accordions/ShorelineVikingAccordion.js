@@ -22,7 +22,7 @@ const ShorelineVikingAccordion = () => {
                 id="accordionSummary"
                 sx={{ backgroundColor: "secondary" }}
             >
-                <Typography sx={{ fontWeight: "bold", backgroundImage: "linear-gradient(90deg, #08d404 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 0), #ffbc34;", backgroundSize: "75px", backgroudPosition: "center", borderRadius: "4px", padding: "3px", marginTop: "-10px" }} color='secondary' variant="h5" >Shoreline Viking</Typography>
+                <Typography sx={{ fontWeight: "bold", backgroundImage: "linear-gradient(90deg, #08d404 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 0), #ffbc34;", backgroundSize: "75px", backgroudPosition: "center", borderRadius: "4px", padding: "3px", marginTop: "0px" }} color='secondary' variant="h5" >Shoreline Viking</Typography>
             </AccordionSummary>
             <AccordionDetails>
                 <Typography sx={{ fontWeight: "bold", textDecoration: "underline", marginTop: "-10px" }} variant="h6">72 hours / Solo</Typography>
