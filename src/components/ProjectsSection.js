@@ -8,6 +8,7 @@ import BerserkersTrialAccordion from './project-accordions/BerserkersTrial'
 import GaetteAccordion from './project-accordions/Gaette'
 import ShorelineVikingAccordion from './project-accordions/ShorelineVikingAccordion';
 import BlackFAccordion from './project-accordions/BlackFAccordion';
+import ClonedDrivesAccordion from './project-accordions/ClonedDrivesAccordion';
 
 const ProjectsSection = () => {
 
@@ -18,6 +19,8 @@ const ProjectsSection = () => {
       <div className="projectsSection" data-aos="fade-up">
 
         <PCEnthusiastsAccordion />
+
+        <ClonedDrivesAccordion />
 
         <MuseumMapperAccordion />
 

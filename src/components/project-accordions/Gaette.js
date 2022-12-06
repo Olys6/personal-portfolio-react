@@ -28,12 +28,14 @@ const GaetteAccordion = () => {
                 <Typography sx={{ fontWeight: "bold", textDecoration: "underline", marginTop: "-20px" }} variant="h6">1 week / Solo</Typography>
                 <br />
                 <Typography sx={{ fontWeight: "bold", marginTop: "-15px" }} variant="h6">
-                    I worked on recreating my first wordle like game with React Typescript and added features such as: no longer having to click on the individual boxes, no more need to click a guess button and now also available in French!
+                    Personal project replicating the popular game Wordle using
+                    React/Typescript with the added feature of bilingualism
+                    combining English and French.
                 </Typography>
                 <br />
                 <div style={{ display: "flex", gap: "1rem", marginTop: "-5px" }}>
                     <Button href="https://olys6.github.io/Gaette-react-typescript/" target="_blank" sx={{ fontWeight: "bold", fontSize: "20px" }} variant="contained">play game</Button>
-                    <Button href="https://github.com/Olys6/Gaette-react-typescript" target="_blank" sx={{ fontWeight: "bold", fontSize: "20px" }} variant="contained">GitHub repository</Button>
+                    <Button href="https://github.com/Olys6/Gaette-react-typescript" target="_blank" sx={{ fontWeight: "bold", fontSize: "20px" }} variant="contained">GitHub Repo</Button>
                 </div>
             </AccordionDetails>
         </Accordion>

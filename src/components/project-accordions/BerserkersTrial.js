@@ -28,8 +28,9 @@ const BerserkersTrialAccordion = () => {
         <Typography sx={{ fontWeight: "bold", textDecoration: "underline" }} variant="h6">1 week / Solo</Typography>
         <br />
         <Typography sx={{ fontWeight: "bold" }} variant="h6">
-          I worked on a classic grid-based game with HTML, JavaScript and CSS. I chose Pac-man,
-          learnt and got a better understanding of JavaScript and CSS from this experience.
+          An enjoyable project using HTML/JavaScript/CSS to produce
+          my take on the classic Pac-Man experience. Playable through
+          the link above.
         </Typography>
         <br />
         <div style={{ display: "flex", gap: "1rem", marginTop: "-5px" }}>

@@ -27,7 +27,7 @@ const BlackFAccordion = () => {
                 </Typography>
             </AccordionSummary>
             <AccordionDetails>
-                <Typography sx={{ fontWeight: "bold", textDecoration: "underline", marginTop: "-10px" }} variant="h6">72 hours / Solo</Typography>
+                <Typography sx={{ fontWeight: "bold", textDecoration: "underline", marginTop: "-10px" }} variant="h6">72 hours / Trio</Typography>
                 <br />
                 <Typography sx={{ fontWeight: "bold", marginTop: "0px" }} variant="h6">
                     I worked on a small art project with an artist to make a 3D black friday website.
@@ -37,8 +37,8 @@ const BlackFAccordion = () => {
                     <Button href="https://black-friday-3d.web.app/" target="_blank" sx={{ fontWeight: "bold", fontSize: "20px" }} variant="contained">
                         Visit Page
                     </Button>
-                    <Button href="https://github.com/Olys6/cloned-drives-react" target="_blank" sx={{ fontWeight: "bold", fontSize: "20px" }} variant="contained">
-                        REPO
+                    <Button href="https://github.com/Olys6/blackf-3d" target="_blank" sx={{ fontWeight: "bold", fontSize: "20px" }} variant="contained">
+                        Github Repo
                     </Button>
                 </div>
             </AccordionDetails>

@@ -16,7 +16,7 @@ const ShorelineVikingAccordion = () => {
     };
 
     return (
-        <Accordion className="projectAccordion" sx={{ minHeight: "20rem", transition: ".3s", backgroundImage: expandedBrightness, backgroundSize: "cover", backgroundPosition: "center", marginBottom: "0 !important" }} expanded={expanded === 'panel'} onChange={handleChange('panel')}>
+        <Accordion className="projectAccordion" sx={{ minHeight: "20rem", transition: ".3s", backgroundImage: expandedBrightness, backgroundSize: "cover", backgroundPosition: "center", marginBottom: "1rem" }} expanded={expanded === 'panel'} onChange={handleChange('panel')}>
             <AccordionSummary
                 expandIcon={<ExpandMoreIcon color="secondary" sx={{ fontSize: "50px", backgroundColor: "#08d404", borderRadius: "4px", backgroundSize: "cover" }} />}
                 id="accordionSummary"
@@ -28,7 +28,10 @@ const ShorelineVikingAccordion = () => {
                 <Typography sx={{ fontWeight: "bold", textDecoration: "underline", marginTop: "-10px" }} variant="h6">72 hours / Solo</Typography>
                 <br />
                 <Typography sx={{ fontWeight: "bold", marginTop: "0px" }} variant="h6">
-                    I had three days to make a game for a Code Jam. So I started learning how to use C# and Unity for this project. Surprisingly, in just 72 hours, I learned a new language and made a game out of it!
+                    This project is a 2D platformer built using C# and Unity as my
+                    contribution to "Mini Jam 108: Seaside". In addition, I used this
+                    project as an exploratory activity into abstraction and inheritance
+                    within object-oriented models.
                 </Typography>
                 <br />
                 <div style={{ display: "flex", gap: "1rem", marginTop: "-5px" }}>

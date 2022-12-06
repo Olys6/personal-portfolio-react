@@ -27,9 +27,9 @@ const MuseumMapperAccordion = () => {
         <Typography sx={{ fontWeight: "bold", textDecoration: "underline", marginTop: "-15px", marginBottom: "-16px" }} variant="h6">1 week / Group of 4</Typography>
         <br />
         <Typography sx={{ fontWeight: "bold" }} variant="h6">
-          I made a website for finding museums in England using React and MongoDB in a group of 4.
-          My group and I pair coded the back-end and we later worked separately on the front-end.
-          This project made me learn a lot about CSS and HTML as I focused on styling.
+          A full-stack JavaScript project using MERN Stack in a team. my
+          colleagues and I delivered a project designed for prospective
+          travellers searching for museums within the United Kingdom.
         </Typography>
         <br />
         <div style={{ display: "flex", gap: "1rem", marginTop: "-6px" }}>

@@ -27,8 +27,10 @@ const PCEnthusiastsAccordion = () => {
         <Typography sx={{ fontWeight: "bold", textDecoration: "underline" }} variant="h6">1 week / Solo</Typography>
         <br />
         <Typography sx={{ fontWeight: "bold" }} variant="h6">
-          I created a website with React as my front-end and Django as my back-end.
-          The website allows you to create different computer builds from a range of components if you are logged in.
+          A Single-page React application with a Django back-end
+          designed to allow users to customise and generate
+          specifications for personal computer builds, which produced
+          Amazon purchase links.
         </Typography>
         <br />
         <div style={{ display: "flex", gap: "1rem", marginTop: "-5px" }}>

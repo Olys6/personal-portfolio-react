@@ -27,9 +27,9 @@ const RapidGamesAccordion = () => {
         <Typography sx={{ fontWeight: "bold", textDecoration: "underline" }} variant="h6">48 Hours / Duo</Typography>
         <br />
         <Typography sx={{ fontWeight: "bold" }} variant="h6">
-          I worked with a classmate with the freetogame API and made a website using React to help the user find a free game to play.
-          In this project,
-          I learnt a lot about JS fundamentals and logic.
+          A Single-page React application that interfaces with the
+          FreeToGame API in order to produce a list of free titles which are
+          searchable and filterable by genre and platform.
         </Typography>
         <br />
         <div style={{ display: "flex", gap: "1rem", marginTop: "-5px" }}>
