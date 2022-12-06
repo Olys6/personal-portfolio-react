@@ -37,8 +37,8 @@ const BlackFAccordion = () => {
                     <Button href="https://black-friday-3d.web.app/" target="_blank" sx={{ fontWeight: "bold", fontSize: "20px" }} variant="contained">
                         Visit Page
                     </Button>
-                    <Button href="https://black-friday-3d.web.app/" target="_blank" sx={{ fontWeight: "bold", fontSize: "20px" }} variant="contained">
-                        Repo
+                    <Button href="https://github.com/Olys6/cloned-drives-react" target="_blank" sx={{ fontWeight: "bold", fontSize: "20px" }} variant="contained">
+                        REPO
                     </Button>
                 </div>
             </AccordionDetails>
