@@ -7,6 +7,7 @@ import RapidGamesAccordion from './project-accordions/RapidGames'
 import BerserkersTrialAccordion from './project-accordions/BerserkersTrial'
 import GaetteAccordion from './project-accordions/Gaette'
 import ShorelineVikingAccordion from './project-accordions/ShorelineVikingAccordion';
+import BlackFAccordion from './project-accordions/BlackFAccordion';
 
 const ProjectsSection = () => {
 
@@ -23,6 +24,8 @@ const ProjectsSection = () => {
         <RapidGamesAccordion />
 
         <BerserkersTrialAccordion />
+
+        <BlackFAccordion />
 
         <GaetteAccordion />
 
